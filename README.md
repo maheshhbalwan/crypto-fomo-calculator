@@ -8,3 +8,5 @@ $ streamlit run your_script_location.py
 
 ### Streamlit Cheatsheet
 https://share.streamlit.io/daniellewisdl/streamlit-cheat-sheet/app.py
+
+project inspired by https://dmsmiley.github.io/
