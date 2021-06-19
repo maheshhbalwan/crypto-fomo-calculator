@@ -1,2 +1,4 @@
 # crypto-fomo-calculator
-Crypto FOMO Calculator
+
+Cryto FOMO Calculator
+Link to streamlit will be added, after deployment on https://streamlit.io/
