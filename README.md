@@ -1,6 +1,7 @@
 # Cryto FOMO Calculator 💰📈
 
-Link to streamlit will be added, after deployment on https://streamlit.io/
+Check below link - for STREAMLIT webapp
+https://share.streamlit.io/maheshhbalwan/crypto-fomo-calculator/main/crypto_fomo_calculator.py
 
 Command Line to run the file
 $ streamlit run your_script_location.py
