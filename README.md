@@ -1,4 +1,4 @@
-# Cryto FOMO Calculator 💰📈
+# Crypto FOMO Calculator 💰📈
 
 ## Check below link - for STREAMLIT webapp
 https://share.streamlit.io/maheshhbalwan/crypto-fomo-calculator/main/crypto_fomo_calculator.py
