@@ -1,7 +1,7 @@
-
 """
 Author  : Maheshh Balwan
 Website : maheshhbalwan.com
+Github  : maheshhbalwan.github.io
 """
 
 import streamlit as st
@@ -30,8 +30,6 @@ selected_crypto_currency = st.radio('Select Crypto Currency', ['bitcoin','dogeco
 st.write('You have selected',selected_crypto_currency)
 id=selected_crypto_currency
 
-
-
 # - Date you wish you would have bought the selected crypto currency
 st.write('''## Choose Date and Amount''')
 today = datetime.utcnow().date()
@@ -39,11 +37,9 @@ previous_day = today - timedelta(days=1)
 selected_historical_date = st.date_input("Date: ", value=previous_day, min_value=datetime(2015,1,1), max_value=previous_day)
 st.write('You have selected',selected_historical_date)
 
-
 # Select the Currency type of your choice
 st.write('''## Choose Currency Type''')
 selected_currency_type = st.selectbox('Select Currency Type', ['usd'])
-
 
 # Amount you wish you would have invested
 selected_amount = st.number_input(selected_currency_type +" Amount: ", min_value=1, max_value=999999999)
@@ -93,7 +89,6 @@ st.write('$', abs(round(selected_currency_type_diff,2)),"!!!")
 now = datetime.now()
 historical_prices = cg.get_coin_market_chart_range_by_id(id, vs_currency=selected_currency_type, from_timestamp=selected_historical_date_datetime.timestamp(), to_timestamp=now.timestamp())['prices']
 
-
 dates = []
 prices = []
 
@@ -106,5 +101,5 @@ df = pd.DataFrame(dictionary)
 df['Dates'] = pd.to_datetime(df['Dates'],unit='ms',origin='unix')
 
 st.line_chart(df.rename(columns={"Dates":"index"}).set_index("index"))
-st.write("Please consider donating some of that sweet $Crypto Currency to the wallet address below:")
-st.write("")
+
+# Find the project code on https://github.com/maheshhbalwan
