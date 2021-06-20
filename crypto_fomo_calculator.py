@@ -102,4 +102,8 @@ df['Dates'] = pd.to_datetime(df['Dates'],unit='ms',origin='unix')
 
 st.line_chart(df.rename(columns={"Dates":"index"}).set_index("index"))
 
+'''
+Command Line to run the file
+$ streamlit run your_script_location.py
+'''
 # Find the project code on https://github.com/maheshhbalwan
